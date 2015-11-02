@@ -54,7 +54,8 @@
 		"source_maps",
 		".vagrant",
 		"tmp",
-		"log"
+		"log",
+		".bundle"
 	],
 	"font_face": "Meslo LG L DZ",
 	"font_size": 12,
