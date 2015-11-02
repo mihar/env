@@ -49,6 +49,7 @@ ln -s ~/Dropbox/Code/dotenv/home/bashrc .bashrc
 ln -s ~/Dropbox/Code/dotenv/home/gemrc .gemrc
 ln -s ~/Dropbox/Code/dotenv/home/gitconfig .gitconfig
 ln -s ~/Dropbox/Code/dotenv/home/vimrc .vimrc
+ln -s ~/Dropbox/Code/dotenv/home/inputrc .inputrc
 ln -s ~/Dropbox/Code/dotenv/home/npmrc .npmrc
 ```
 
