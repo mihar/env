@@ -8,11 +8,15 @@ If you use Dropbox, it's also a nice way to keep all of your things in sync. *Su
 
 Install homebrew first
 
-```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
+```
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
 
 Install Cask for OS X apps
 
-```brew install caskroom/cask/brew-cask```
+```
+brew install caskroom/cask/brew-cask
+```
 
 Install packages
 
@@ -61,6 +65,38 @@ ln -s ~/Dropbox/Code/dotenv/sublime3/* .
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/
 ```
 
+Plugins that you get:
+
+* SublimeLinter (Ruby, RuboCop, ESLint, CoffeeLint, Haml)
+* Advanced New File
+* Alignment
+* All Autocomplete
+* Bracket Highlighter
+* EditorConfig
+* Git
+* LoremIpsum
+* PackageControl
+* Pretty JSON
+* SidebarEnhancement
+* Vintageous
+
+Syntaxes that you get:
+
+* CoffeeScript
+* Dockerfile
+* JSNext - ES6
+* RSpec
+* Sass
+* Haml
+
+Themes that you get:
+
+* Spacegray
+  The best dark theme out there
+
+* Tomorrow
+  The best light theme out there
+
 ## Vim
 
 ```bash
@@ -69,6 +105,16 @@ curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 ```
+
+Plugins that you get:
+
+* Vundle (vim bundler)
+* base16 color scheme
+* ctrlp
+* ack
+* fugitive
+* ruby
+* pathogen
 
 ## iTerm 2
 
