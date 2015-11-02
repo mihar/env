@@ -1,4 +1,12 @@
-## Install brew & packages
+# Base development environment setup
+
+This are the base config files and settings I use on my work and personal machines.
+
+If you use Dropbox, it's also a nice way to keep all of your things in sync. *Sublime Text 3* and *iTerm* work very well with config file syncing over Dropbox. Just symlinks the files as instructed below and you should be good to go.
+
+## Install packages
+
+Install homebrew first
 
 ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```
 
@@ -34,12 +42,12 @@ brew cask install dockertoolbox
 ## dotfiles
 ```bash
 cd ~
-ln -s ~/Dropbox/code/dotenv/home/bash_profile .bash_profile
-ln -s ~/Dropbox/code/dotenv/home/bashrc .bashrc
-ln -s ~/Dropbox/code/dotenv/home/gemrc .gemrc
-ln -s ~/Dropbox/code/dotenv/home/gitconfig .gitconfig
-ln -s ~/Dropbox/code/dotenv/home/vimrc .vimrc
-ln -s ~/Dropbox/code/dotenv/home/npmrc .npmrc
+ln -s ~/Dropbox/Code/dotenv/home/bash_profile .bash_profile
+ln -s ~/Dropbox/Code/dotenv/home/bashrc .bashrc
+ln -s ~/Dropbox/Code/dotenv/home/gemrc .gemrc
+ln -s ~/Dropbox/Code/dotenv/home/gitconfig .gitconfig
+ln -s ~/Dropbox/Code/dotenv/home/vimrc .vimrc
+ln -s ~/Dropbox/Code/dotenv/home/npmrc .npmrc
 ```
 
 ## Sublime Text 3
