@@ -57,6 +57,15 @@ cd ~/Library/Application\ Support/Sublime\ Text\ 3/
 ln -s ~/Dropbox/Code/dotenv/sublime3/* .
 ```
 
+## Vim
+
+```bash
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vim +PluginInstall +qall
+```
+
 ## iTerm 2
 
 iTerm has a nice convenient way of overriding which directory houses your settings.
