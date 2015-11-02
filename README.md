@@ -6,19 +6,19 @@ If you use Dropbox, it's also a nice way to keep all of your things in sync. *Su
 
 ## Install packages
 
-Install homebrew first
+**Install homebrew first**
 
 ```
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Install Cask for OS X apps
+**Install Cask for OS X apps**
 
 ```
 brew install caskroom/cask/brew-cask
 ```
 
-Install packages
+**Install packages**
 
 ```bash
 brew install bash-completion
@@ -37,7 +37,7 @@ brew install heroku
 brew install keybase
 ```
 
-OS X apps
+**Install OS X apps**
 
 ```bash
 brew cask install sublime-text3
@@ -65,7 +65,7 @@ ln -s ~/Dropbox/Code/dotenv/sublime3/* .
 ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/
 ```
 
-Plugins that you get:
+**Plugins that you get:**
 
 * SublimeLinter (Ruby, RuboCop, ESLint, CoffeeLint, Haml)
 * Advanced New File
@@ -80,7 +80,7 @@ Plugins that you get:
 * SidebarEnhancement
 * Vintageous
 
-Syntaxes that you get:
+**Syntaxes that you get:**
 
 * CoffeeScript
 * Dockerfile
@@ -89,7 +89,7 @@ Syntaxes that you get:
 * Sass
 * Haml
 
-Themes that you get:
+**Themes that you get:**
 
 * Spacegray
   The best dark theme out there
@@ -106,7 +106,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 ```
 
-Plugins that you get:
+**Plugins that you get:**
 
 * Vundle (vim bundler)
 * base16 color scheme
@@ -121,3 +121,13 @@ Plugins that you get:
 iTerm has a nice convenient way of overriding which directory houses your settings.
 
 ![](http://i.imgur.com/pwGCOrj.png)
+
+## Font
+
+For my terminal usage I use **Meslo**, which is a customized version of Apple's Menlo typeface. Main differentiator is that it offers three different line-heights baked into the type, because back in the day, most terminal applications were oblivious to the importance of such a setting.
+
+iTerm 2 has such a setting now, but I still prefer to use the **Meslo LG L DZ** at 12pts.
+
+For more information look at this [blog post](http://mir.aculo.us/2010/10/12/the-long-search-for-a-terminal-font-is-over/).
+
+The font files can be downloaded from GitHub [here](https://github.com/andreberg/Meslo-Font/downloads).
