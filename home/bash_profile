@@ -49,3 +49,13 @@ eval "$(docker-machine env boot2docker)"
 #
 # Redefines of commands.
 source ~/Dropbox/Code/dotenv/home/aliases
+
+###################################################
+# PRIVATE
+# Put your private configurations/functions/aliases
+# in this file and it'll be autoloaded.
+#
+if [ -f ~/.private_profile ]
+then
+	source ~/.private_profile
+fi
