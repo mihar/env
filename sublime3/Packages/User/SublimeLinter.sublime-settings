@@ -26,7 +26,6 @@
 				"@disable": false,
 				"args":
 				[
-					"-f/Users/mihar/.coffeelint.json"
 				],
 				"excludes":
 				[
