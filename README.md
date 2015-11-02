@@ -35,6 +35,7 @@ brew install keybase
 OS X apps
 
 ```bash
+brew cask install sublime-text3
 brew cask install iterm2
 brew cask install dockertoolbox
 ```
