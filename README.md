@@ -24,6 +24,7 @@ brew install vim
 brew install imagemagick
 brew install the_silver_searcher
 brew install rbenv
+brew install rbenv-gemset
 brew install ruby-build
 brew install nvm
 brew install postgresql
@@ -56,6 +57,7 @@ ln -s ~/Dropbox/Code/dotenv/home/npmrc .npmrc
 ```bash
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/
 ln -s ~/Dropbox/Code/dotenv/sublime3/* .
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/
 ```
 
 ## Vim
