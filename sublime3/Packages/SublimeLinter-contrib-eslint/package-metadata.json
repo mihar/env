@@ -1,0 +1,1 @@
+{"version": "1.9.0", "url": "https://github.com/roadhump/SublimeLinter-eslint", "platforms": ["*"], "sublime_text": ">=3000", "dependencies": [], "description": "This linter plugin for SublimeLinter provides an interface to ESLint"}

@@ -1,0 +1,10 @@
+{
+	"check_for_rbenv": true,
+	"check_for_rvm": false,
+	"mark_issues_in_view": true,
+	"rbenv_path": "/usr/local/bin/rbenv",
+	"rubocop_command": "",
+	"rubocop_config_file": "",
+	"rvm_auto_ruby_path": "~/.rvm/bin/rvm-auto-ruby",
+	"show_auto_correct_warning": true
+}

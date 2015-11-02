@@ -1,0 +1,35 @@
+alias grep='grep --color'
+alias ls='ls -lahG' # colors
+
+# Dropbox GIT cleanup
+alias dropboxgit1='find . -type f -name "* conflicted copy*" -exec rm -f {} \;'
+alias dropboxgit2="awk '!/conflicted/' .git/packed-refs > temp && mv temp .git/packed-refs"
+
+# Git commands
+alias gs='git status'
+alias gp='git pull origin master'
+alias gpo='git pull --rebase origin master'
+alias gpr='git pull --rebase'
+alias gpu='git push'
+alias gpuf='git push --force-with-lease'
+alias gr='git rebase'
+alias grc='git rebase --continue'
+alias ga='git add'
+alias gc='git commit'
+alias gca='git commit --amend'
+alias gb='git branch'
+alias gbd='git branch -D'
+alias gm='git checkout master'
+alias gnb='git checkout -b'
+alias gck='git checkout'
+alias gd='git diff | subl'
+alias gdo='git diff origin/master | subl'
+alias gl='git log'
+alias gsta='git stash'
+alias gstp='git stash pop'
+
+alias git_ignore='git update-index --skip-worktree'    # http://devblog.avdi.org/2011/05/20/keep-local-modifications-in-git-tracked-files/
+alias git_attend='git update-index --no-skip-worktree' # http://devblog.avdi.org/2011/05/20/keep-local-modifications-in-git-tracked-files/
+
+# removed branches which are already merged into master
+alias clean_branches="git branch --merged master | grep -v 'master$' | xargs git branch -d"

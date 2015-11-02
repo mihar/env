@@ -1,0 +1,5 @@
+[
+  { "keys": ["super+ctrl+shift+a"], "command": "alignment" },
+  {"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 40.0}, "context": [{ "key": "setting.command_mode" }]},
+  {"keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -40.0}, "context": [{"key": "setting.command_mode"}]}
+]

@@ -1,0 +1,44 @@
+[user]
+	name = Miha Rebernik
+	email = miha@rebernik.info
+[alias]
+  cp = cherry-pick
+	co = checkout
+	st = status
+  ci = commit
+  br = branch
+  df = diff
+  lg = log -p
+[apply]
+	whitespace = nowarn
+[core]
+	editor = /usr/local/bin/vim
+	excludesfile = ~/Dropbox/code/dotenv/home/gitignore_global
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+	ui = true
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[branch]
+	autosetuprebase = always
+[github]
+	user = mihar
+[push]
+	default = simple
+[mergetool]
+	keepBackup = true
+[rebase]
+	autosquash = true

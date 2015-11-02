@@ -1,0 +1,70 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+Plugin 'chriskempson/base16-vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'tpope/vim-fugitive'
+Bundle 'vim-ruby/vim-ruby'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+"execute pathogen#infect()
+set backspace=2         " backspace in insert mode works like normal editor
+syntax on               " syntax highlighting
+filetype indent on      " activates indenting for files
+set nobackup            " get rid of annoying ~file
+
+colorscheme base16-ocean
+
+let NERDTreeQuitOnOpen=1
+let NERDTreeWinSize=35
+
+set background=dark
+set number	" Show line numbers
+set linebreak	" Break lines at word (requires Wrap lines)
+set showbreak=+++	" Wrap-broken line prefix
+set textwidth=100	" Line wrap (number of cols)
+set showmatch	" Highlight matching brace
+"set spell	" Enable spell-checking
+set visualbell	" Use visual bell (no beeping)
+ 
+set hlsearch	" Highlight all search results
+set smartcase	" Enable smart-case search
+set ignorecase	" Always case-insensitive
+set incsearch	" Searches for strings incrementally
+ 
+set autoindent	 " Auto-indent new lines
+set shiftwidth=2 " Number of auto-indent spaces
+set smartindent	" Enable smart-indent
+set smarttab	" Enable smart-tabs
+set softtabstop=2	" Number of spaces per Tab
+set expandtab
+ 
+set ruler	" Show row and column ruler information
+set showtabline=0	" Show tab bar
+ 
+set autochdir	" Change working directory to open buffer
+ 
+set undolevels=1000	" Number of undo levels
+set backspace=indent,eol,start	" Backspace behaviour
+set encoding=utf-8 
+set mouse=a 
+
+map <C-h> <C-w>h 
+map <C-j> <C-w>j 
+map <C-k> <C-w>k 
+map <C-l> <C-w>l 
+
+" Reset highlighted search
+nnoremap <silent> <CR> :let @/=""<CR><CR>
+
+set wildmode=longest,list,full
+set wildmenu
+set showmode
