@@ -1,2 +1,4 @@
 home/personal
 home/work
+*.cache
+*.last-run
