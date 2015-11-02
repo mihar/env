@@ -28,6 +28,7 @@
 		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-haml",
 		"SublimeLinter-html-tidy",
+		"SublimeLinter-rubocop",
 		"SublimeLinter-ruby",
 		"Theme - Spacegray",
 		"Tomorrow Color Schemes",
