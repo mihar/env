@@ -41,7 +41,7 @@ brew install keybase
 
 ```bash
 brew cask install sublime-text3
-brew cask install iterm2
+brew cask install iterm2-nightly
 brew cask install dockertoolbox
 ```
 
