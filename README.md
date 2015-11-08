@@ -14,8 +14,9 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 **Install Cask for OS X apps**
 
-```
+```bash
 brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
 ```
 
 **Install packages**
