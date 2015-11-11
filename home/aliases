@@ -33,3 +33,11 @@ alias git_attend='git update-index --no-skip-worktree' # http://devblog.avdi.org
 
 # removed branches which are already merged into master
 alias clean_branches="git branch --merged master | grep -v 'master$' | xargs git branch -d"
+
+# cleanup docker artifacts
+function docker-cleanup-containers {
+  docker rm $(docker ps -a -q)
+}
+function docker-cleanup-images {
+  docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
+}
