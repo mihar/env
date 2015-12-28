@@ -1,0 +1,10 @@
+[
+  {
+    "caption": "dark2bright",
+    "command": "dark2bright"
+  },
+  {
+    "caption": "bright2dark",
+    "command": "bright2dark"
+  }
+]
