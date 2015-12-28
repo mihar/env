@@ -5,24 +5,24 @@
 	<key>comment</key>
 	<string>http://chriskempson.com</string>
 	<key>name</key>
-	<string>Tomorrow</string>
+	<string>Tomorrow Night</string>
 	<key>settings</key>
 	<array>
 		<dict>
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#FFFFFF</string>
+				<string>#1D1F21</string>
 				<key>caret</key>
 				<string>#AEAFAD</string>
 				<key>foreground</key>
-				<string>#4D4D4C</string>
+				<string>#C5C8C6</string>
 				<key>invisibles</key>
-				<string>#D1D1D1</string>
+				<string>#4B4E55</string>
 				<key>lineHighlight</key>
-				<string>#EFEFEF</string>
+				<string>#282A2E</string>
 				<key>selection</key>
-				<string>#D6D6D6</string>
+				<string>#373B41</string>
 			</dict>
 		</dict>
 		<dict>
@@ -46,7 +46,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#666969</string>
+				<string>#CED1CF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -57,7 +57,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#C82829</string>
+				<string>#CC6666</string>
 			</dict>
 		</dict>
 		<dict>
@@ -70,7 +70,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#F5871F</string>
+				<string>#DE935F</string>
 			</dict>
 		</dict>
 		<dict>
@@ -83,7 +83,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#C99E00</string>
+				<string>#F0C674</string>
 			</dict>
 		</dict>
 		<dict>
@@ -96,7 +96,7 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#718C00</string>
+				<string>#B5BD68</string>
 			</dict>
 		</dict>
 		<dict>
@@ -107,7 +107,7 @@
 			<key>settings</key>
 			<dict>
 				<key>foreground</key>
-				<string>#3E999F</string>
+				<string>#8ABEB7</string>
 			</dict>
 		</dict>
 		<dict>
@@ -120,20 +120,20 @@
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#4271AE</string>
+				<string>#81A2BE</string>
 			</dict>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Keyword, Storage</string>
 			<key>scope</key>
-			<string>keyword, storage, storage.type</string>
+			<string>keyword, storage, storage.type, entity.name.tag.css</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#8959A8</string>
+				<string>#B294BB</string>
 			</dict>
 		</dict>
 		<dict>
@@ -144,11 +144,11 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#C82829</string>
+				<string>#DF5F5F</string>
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#CED2CF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -159,9 +159,9 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#4271AE</string>
+				<string>#82A3BF</string>
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#CED2CF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -172,11 +172,11 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#8959A8</string>
+				<string>#B798BF</string>
 				<key>fontStyle</key>
 				<string />
 				<key>foreground</key>
-				<string>#FFFFFF</string>
+				<string>#CED2CF</string>
 			</dict>
 		</dict>
 		<dict>
@@ -197,7 +197,7 @@
 			<string>markup.inserted.diff, meta.diff.header.to-file</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
+				<key>foreground</key>
 				<string>#718c00</string>
 			</dict>
 		</dict>
@@ -208,7 +208,7 @@
 			<string>markup.deleted.diff, meta.diff.header.from-file</string>
 			<key>settings</key>
 			<dict>
-				<key>background</key>
+				<key>foreground</key>
 				<string>#c82829</string>
 			</dict>
 		</dict>
@@ -238,6 +238,39 @@
 				<string>#3e999f</string>
 			</dict>
 		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>diff.deleted</string>
+		  <key>scope</key>
+		  <string>markup.deleted</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#F92672</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>diff.inserted</string>
+		  <key>scope</key>
+		  <string>markup.inserted</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#A6E22E</string>
+		  </dict>
+		</dict>
+		<dict>
+		  <key>name</key>
+		  <string>diff.changed</string>
+		  <key>scope</key>
+		  <string>markup.changed</string>
+		  <key>settings</key>
+		  <dict>
+		    <key>foreground</key>
+		    <string>#967EFB</string>
+		  </dict>
+		</dict>
 	<dict>
             <key>name</key>
             <string>SublimeLinter Warning</string>
@@ -250,16 +283,6 @@
             </dict>
         </dict><dict>
             <key>name</key>
-            <string>SublimeLinter Gutter Mark</string>
-            <key>scope</key>
-            <string>sublimelinter.gutter-mark</string>
-            <key>settings</key>
-            <dict>
-                <key>foreground</key>
-                <string>#FFFFFF</string>
-            </dict>
-        </dict><dict>
-            <key>name</key>
             <string>SublimeLinter Error</string>
             <key>scope</key>
             <string>sublimelinter.mark.error</string>
@@ -268,8 +291,18 @@
                 <key>foreground</key>
                 <string>#D02000</string>
             </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Gutter Mark</string>
+            <key>scope</key>
+            <string>sublimelinter.gutter-mark</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
+            </dict>
         </dict></array>
 	<key>uuid</key>
-	<string>82CCD69C-F1B1-4529-B39E-780F91F07604</string>
+	<string>F96223EB-1A60-4617-92F3-D24D4F13DB09</string>
 </dict>
 </plist>
