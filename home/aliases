@@ -35,9 +35,15 @@ alias git_attend='git update-index --no-skip-worktree' # http://devblog.avdi.org
 alias clean_branches="git branch --merged master | grep -v 'master$' | xargs git branch -d"
 
 # cleanup docker artifacts
-function docker-cleanup-containers {
+function docker_cleanup_containers {
   docker rm $(docker ps -a -q)
 }
-function docker-cleanup-images {
+function docker_cleanup_images {
   docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
 }
+
+# cleanup some unused Docker cache to save disk space
+alias docker_remove_dangling="docker rmi $(docker images -f 'dangling=true' -q)"
+
+# cleanup exited Docker containers
+alias docker_remove_exited="docker rm -v $(docker ps -a -q -f status=exited)"
