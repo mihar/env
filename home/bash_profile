@@ -1,5 +1,5 @@
 # Binary lookup
-export PATH="/usr/local/sbin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/mysql/bin:~/.bin"
+export PATH="node_modules/.bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/git/bin:/usr/local/mysql/bin:~/.bin"
 
 # Language and locale.
 export LANG="en_US.UTF-8"
