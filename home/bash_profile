@@ -42,9 +42,6 @@ GIT_PS1_SHOWCOLORHINTS=true
 # iTerm shell integration script
 source ~/Dropbox/Code/dotenv/home/iterm2_shell_integration.bash
 
-# Setup docker
-eval "$(docker-machine env boot2docker)"
-
 # Aliases
 #
 # Redefines of commands.

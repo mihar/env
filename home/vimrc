@@ -21,7 +21,7 @@ syntax on               " syntax highlighting
 filetype indent on      " activates indenting for files
 set nobackup            " get rid of annoying ~file
 
-colorscheme base16-ocean
+" colorscheme base16-ocean
 
 let NERDTreeQuitOnOpen=1
 let NERDTreeWinSize=35

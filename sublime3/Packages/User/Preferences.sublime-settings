@@ -15,10 +15,12 @@
 		"*.jar",
 		"*.zip"
 	],
-	"color_scheme": "Packages/User/SublimeLinter/base16-ocean.dark (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Tomorrow (SL).tmTheme",
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
+		"*.pdf",
+		"*.graffle",
 		"*.sassc",
 		"*.pyc",
 		"*.pyo",
@@ -55,7 +57,8 @@
 		".vagrant",
 		"tmp",
 		"log",
-		".bundle"
+		".bundle",
+		"coverage"
 	],
 	"font_face": "Meslo LG L DZ",
 	"font_size": 12,
@@ -73,7 +76,7 @@
 	],
 	"index_files": true,
 	"tab_size": 2,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Spacegray Light.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"word_separators": "./\\()\"'-:,.;<>~@#$%^&*|+=[]{}`~"
