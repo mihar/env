@@ -1,7 +1,0 @@
-[
-  { "keys": ["super+ctrl+shift+a"], "command": "alignment" },
-  {"keys": ["ctrl+u"], "command": "scroll_lines", "args": {"amount": 40.0}, "context": [{ "key": "setting.command_mode" }]},
-  {"keys": ["ctrl+d"], "command": "scroll_lines", "args": {"amount": -40.0}, "context": [{"key": "setting.command_mode"}]},
-  {"keys": ["super+ctrl+shift+d"], "command": "bright2dark" },
-  {"keys": ["super+ctrl+shift+b"], "command": "dark2bright" }
-]

@@ -1,3 +1,0 @@
-[
-  { "keys": ["ctrl+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
-]
