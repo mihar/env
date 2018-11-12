@@ -38,3 +38,6 @@ Thumbs.db
 ######################
 node_modules/
 vendor/bundle
+
+# CTAGS
+.tags
