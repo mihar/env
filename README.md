@@ -2,7 +2,7 @@
 
 This are the base config files and settings I use on my work and personal machines.
 
-If you use Dropbox, it's also a nice way to keep all of your things in sync. *Sublime Text 3* and *iTerm* work very well with config file syncing over Dropbox. Just symlinks the files as instructed below and you should be good to go.
+If you use Dropbox, it's also a nice way to keep all of your things in sync. *iTerm 2* works well with config file syncing over Dropbox. Just symlink the files as instructed below and you should be good to go.
 
 ## Install packages
 
