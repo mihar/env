@@ -1,8 +1,25 @@
-# Base development environment setup
+# Base environment setup
 
 This are the base config files and settings I use on my work and personal machines.
 
 If you use Dropbox, it's also a nice way to keep all of your things in sync. *iTerm 2* works well with config file syncing over Dropbox. Just symlink the files as instructed below and you should be good to go.
+
+## The Dock
+
+Remove the annoying delay with Dock auto-hiding:
+
+```bash
+defaults write com.apple.Dock autohide-delay -float 0; killall Dock
+```
+
+## Screenshot location
+
+I like to keep my Desktop clean, so let's change the default location where screenshots are saved:
+
+```bash
+mkdir ~/Screenshots
+$ defaults write com.apple.screencapture location ~/Screenshots && killall SystemUIServer
+```
 
 ## Install packages
 
@@ -47,9 +64,21 @@ omf install bobthefish
 
 ```bash
 brew cask install atom
+brew cask install google-chrome
+brew cask install slack
+brew cask install spotify
+brew cask install numi
 brew cask install iterm2
 brew cask install docker
 brew cask install phantomjs
+```
+
+## SSH
+
+Create a new key:
+
+```bash
+ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
 ## dotfiles
@@ -61,6 +90,7 @@ ln -s ~/Code/dotenv/home/gitconfig .gitconfig
 ln -s ~/Code/dotenv/home/vimrc .vimrc
 ln -s ~/Code/dotenv/home/inputrc .inputrc
 ln -s ~/Code/dotenv/home/npmrc .npmrc
+ln -s ~/Code/dotenv/home/sshconfig ~/.ssh/config
 ```
 
 ### Fish
