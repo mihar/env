@@ -13,7 +13,7 @@
 	whitespace = nowarn
 [core]
 	editor = /usr/local/bin/vim
-	excludesfile = ~/Dropbox/code/dotenv/home/gitignore_global
+	excludesfile = ~/Code/dotenv/home/gitignore_global
 [color]
   branch = auto
   diff = auto

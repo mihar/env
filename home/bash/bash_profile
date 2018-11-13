@@ -34,18 +34,18 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # git prompt with current branch name
-source ~/Dropbox/Code/dotenv/home/git-prompt.sh
+source ~/Dropbox/Code/dotenv/home/bash/git-prompt.sh
 PROMPT_COMMAND='__git_ps1 "\W" "\\\$ "'
 GIT_PS1_SHOWDIRTYSTATE=true
 GIT_PS1_SHOWCOLORHINTS=true
 
 # iTerm shell integration script
-source ~/Dropbox/Code/dotenv/home/iterm2_shell_integration.bash
+source ~/Dropbox/Code/dotenv/home/bash/iterm2_shell_integration.bash
 
 # Aliases
 #
 # Redefines of commands.
-source ~/Dropbox/Code/dotenv/home/aliases
+source ~/Dropbox/Code/dotenv/home/bash/bash/aliases
 
 ###################################################
 # PRIVATE

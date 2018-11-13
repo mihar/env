@@ -12,17 +12,10 @@ If you use Dropbox, it's also a nice way to keep all of your things in sync. *Su
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-**Install Cask for OS X apps**
-
-```bash
-brew install caskroom/cask/brew-cask
-brew tap caskroom/versions
-```
-
 **Install packages**
 
 ```bash
-brew install bash-completion
+brew install fish
 brew install git
 brew install wget
 brew install vim
@@ -31,72 +24,65 @@ brew install the_silver_searcher
 brew install rbenv
 brew install rbenv-gemset
 brew install ruby-build
-brew install nvm
+brew install nodenv
+brew install node-build
 brew install postgresql
-brew install phantomjs
 brew install heroku
-brew install keybase
+brew install ffmpeg
+brew install nmap
+```
+
+**Install the Fish shell**
+
+```bash
+curl -L https://get.oh-my.fish | fish
+sudo echo /usr/local/bin/fish >> /etc/shells
+chsh -s /usr/local/bin/fish
+omf install rbenv
+omf install nodenv
+omf install bobthefish
 ```
 
 **Install OS X apps**
 
 ```bash
-brew cask install sublime-text3
-brew cask install iterm2-nightly
-brew cask install dockertoolbox
+brew cask install atom
+brew cask install iterm2
+brew cask install docker
+brew cask install phantomjs
 ```
 
 ## dotfiles
+
 ```bash
 cd ~
-ln -s ~/Dropbox/Code/dotenv/home/bash_profile .bash_profile
-ln -s ~/Dropbox/Code/dotenv/home/bashrc .bashrc
-ln -s ~/Dropbox/Code/dotenv/home/gemrc .gemrc
-ln -s ~/Dropbox/Code/dotenv/home/gitconfig .gitconfig
-ln -s ~/Dropbox/Code/dotenv/home/vimrc .vimrc
-ln -s ~/Dropbox/Code/dotenv/home/inputrc .inputrc
-ln -s ~/Dropbox/Code/dotenv/home/npmrc .npmrc
+ln -s ~/Code/dotenv/home/gemrc .gemrc
+ln -s ~/Code/dotenv/home/gitconfig .gitconfig
+ln -s ~/Code/dotenv/home/vimrc .vimrc
+ln -s ~/Code/dotenv/home/inputrc .inputrc
+ln -s ~/Code/dotenv/home/npmrc .npmrc
 ```
 
-## Sublime Text 3
+### Fish
 
 ```bash
-cd ~/Library/Application\ Support/Sublime\ Text\ 3/
-ln -s ~/Dropbox/Code/dotenv/sublime3/* .
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/
+cd ~
+mkdir -p ~/.config/fish/conf.d
+ln -s ~/Code/dotenv/home/fish/aliases.fish ~/.config/fish/conf.d/aliases.fish
+ln -s ~/Code/dotenv/home/fish/config.fish ~/.config/fish/conf.d/config.fish
 ```
 
-**Plugins that you get:**
+### Bash
 
-* SublimeLinter (Ruby, RuboCop, ESLint, CoffeeLint, Haml)
-* Advanced New File
-* Alignment
-* All Autocomplete
-* Bracket Highlighter
-* EditorConfig
-* Git
-* LoremIpsum
-* PackageControl
-* Pretty JSON
-* SidebarEnhancement
-* Vintageous
+```bash
+cd ~
+ln -s ~/Code/dotenv/home/bash/bash_profile .bash_profile
+ln -s ~/Code/dotenv/home/bash/bashrc .bashrc
+```
 
-**Syntaxes that you get:**
+## Atom
 
-* CoffeeScript
-* Dockerfile
-* JSNext - ES6
-* RSpec
-* Sass
-* Haml
-
-**Themes that you get:**
-
-* Spacegray
-  The best dark theme out there
-
-* Tomorrow
-  The best light theme out there
+I use [Atom](https://atom.io) as my editor and use the [sync-setting](https://atom.io/packages/sync-settings) package to sync via Github gists
 
 ## Vim
 
@@ -125,10 +111,15 @@ iTerm has a nice convenient way of overriding which directory houses your settin
 
 ## Font
 
-For my terminal usage I use **Meslo**, which is a customized version of Apple's Menlo typeface. Main differentiator is that it offers three different line-heights baked into the type, because back in the day, most terminal applications were oblivious to the importance of such a setting.
+For my editor usage I use **Meslo**, which is a customized version of Apple's Menlo typeface. Main differentiator is that it offers three different line-heights baked into the type, because back in the day, most terminal applications were oblivious to the importance of such a setting.
+
+For terminal support of the bob the fish theme, I use a [patched version of Meslo](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo) from the [Nerd Fonts project](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo).
 
 iTerm 2 has such a setting now, but I still prefer to use the **Meslo LG L DZ** at 12pts.
 
 For more information look at this [blog post](http://mir.aculo.us/2010/10/12/the-long-search-for-a-terminal-font-is-over/).
 
-The font files can be downloaded from GitHub [here](https://github.com/andreberg/Meslo-Font/downloads).
+The font files can be downloaded from GitHub here:
+
+* [Meslo](https://github.com/andreberg/Meslo-Font/downloads)
+* [Meslo Nerd patched](https://github.com/ryanoasis/nerd-fonts/releases)

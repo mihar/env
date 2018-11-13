@@ -1,4 +1,4 @@
-home/personal
-home/work
+**/personal
+**/work
 *.cache
 *.last-run
