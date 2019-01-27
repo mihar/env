@@ -47,6 +47,7 @@ brew install postgresql
 brew install heroku
 brew install ffmpeg
 brew install nmap
+brew install fzf
 ```
 
 **Install the Fish shell**
@@ -58,6 +59,7 @@ chsh -s /usr/local/bin/fish
 omf install rbenv
 omf install nodenv
 omf install bobthefish
+omf install https://github.com/mihar/fzf
 ```
 
 **Install OS X apps**
