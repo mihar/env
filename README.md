@@ -65,14 +65,16 @@ omf install https://github.com/mihar/fzf
 **Install OS X apps**
 
 ```bash
-brew cask install atom
-brew cask install google-chrome
+brew cask install visual-studio-code
+brew cask install brave
 brew cask install slack
+brew cask install telegram
 brew cask install spotify
 brew cask install numi
 brew cask install iterm2
 brew cask install docker
 brew cask install phantomjs
+brew cask install shifty
 ```
 
 ## SSH
