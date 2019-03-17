@@ -75,6 +75,8 @@ brew cask install iterm2
 brew cask install docker
 brew cask install phantomjs
 brew cask install shifty
+brew cask install lunar
+brew cask install spectacle
 ```
 
 ## SSH
