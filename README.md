@@ -144,7 +144,7 @@ Lets link nvim to vim for less hassle:
 ln -s /usr/local/bin/nvim /usr/local/bin/vim
 ```
 
-Now install [vim-plug](
+Now install [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```bash
 mkdir -p ~/.config/nvim/autoload 
