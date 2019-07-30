@@ -35,19 +35,19 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install fish
 brew install git
 brew install wget
-brew install vim
+brew install neovim
 brew install imagemagick
 brew install the_silver_searcher
 brew install rbenv
 brew install rbenv-gemset
-brew install ruby-build
 brew install nodenv
-brew install node-build
 brew install postgresql
-brew install heroku
 brew install ffmpeg
 brew install nmap
 brew install fzf
+
+# Heroku has its own tap
+brew tap heroku/brew && brew install heroku
 ```
 
 **Install the Fish shell**
@@ -66,17 +66,20 @@ omf install https://github.com/mihar/fzf
 
 ```bash
 brew cask install visual-studio-code
-brew cask install brave
+brew cask install brave-browser
 brew cask install slack
 brew cask install telegram
 brew cask install spotify
 brew cask install numi
 brew cask install iterm2
 brew cask install docker
-brew cask install phantomjs
 brew cask install shifty
 brew cask install lunar
 brew cask install spectacle
+brew cask install istat-menus
+brew cask install bartender
+brew cask install cleanmymac
+brew cask install sonos
 ```
 
 ## SSH
@@ -87,13 +90,26 @@ Create a new key:
 ssh-keygen -t rsa -C "your_email@example.com"
 ```
 
+## Safari extensions
+
+- [1Blocker](https://apps.apple.com/us/app/id1107421413) for tracker and ad blocking
+- [1Password](https://1password.com/downloads/mac/) for password management
+- [Dark Reader](https://itunes.apple.com/us/app/dark-reader-for-safari/id1438243180) for night
+- [Stop the Madness](https://itunes.apple.com/app/stopthemadness/id1376402589?mt=12) to prevent annoying JavaScript
+- [sVim](https://safari-extensions.apple.com/details/?id=com.flipxfx.svim-6Q2K7JYUZ6) for Vim-like navigation
+
+### sVim configuration
+
+For `sVimrc` load the gist `5341a0a533f7af55af598209e980efa2`.
+For `sVimcss` load the gist `842ac422e7ead649f9a946cdd2e12bde`.
+
 ## dotfiles
 
 ```bash
 cd ~
 ln -s ~/Code/dotenv/home/gemrc .gemrc
 ln -s ~/Code/dotenv/home/gitconfig .gitconfig
-ln -s ~/Code/dotenv/home/vimrc .vimrc
+ln -s ~/Code/dotenv/home/init.vim ~/.config/nvim/init.vim
 ln -s ~/Code/dotenv/home/inputrc .inputrc
 ln -s ~/Code/dotenv/home/npmrc .npmrc
 ln -s ~/Code/dotenv/home/sshconfig ~/.ssh/config
@@ -120,24 +136,30 @@ ln -s ~/Code/dotenv/home/bash/bashrc .bashrc
 
 I use [Atom](https://atom.io) as my editor and use the [sync-setting](https://atom.io/packages/sync-settings) package to sync via Github gists
 
-## Vim
+## NeoVim
+
+Lets link nvim to vim for less hassle:
 
 ```bash
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-vim +PluginInstall +qall
+ln -s /usr/local/bin/nvim /usr/local/bin/vim
 ```
 
-**Plugins that you get:**
+Now install [vim-plug](
 
-* Vundle (vim bundler)
-* base16 color scheme
-* ctrlp
+```bash
+mkdir -p ~/.config/nvim/autoload 
+curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > ~/.config/nvim/autoload/plug.vim
+vim +PlugInstall +qall
+```
+
+**Some of the plugins that you get:**
+
+* spacegray color scheme
+* fzf
 * ack
 * fugitive
 * ruby
-* pathogen
+* javascript
 
 ## iTerm 2
 
