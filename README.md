@@ -132,9 +132,15 @@ ln -s ~/Code/dotenv/home/bash/bash_profile .bash_profile
 ln -s ~/Code/dotenv/home/bash/bashrc .bashrc
 ```
 
-## Atom
+## VS Code
 
-I use [Atom](https://atom.io) as my editor and use the [sync-setting](https://atom.io/packages/sync-settings) package to sync via Github gists
+I use [VS Code](https://code.visualstudio.com/) as my editor and use the [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) package to sync via Github gists.
+
+Since I use Vim mode in VS Code, one handy setting is also turning off letter accent suggestings on pressing, which makes it possible to hold `h`, `j`, `k`, `l` and others and it'll repeat the motion.
+
+```bash
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
 
 ## NeoVim
 
