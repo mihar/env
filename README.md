@@ -66,21 +66,22 @@ omf install https://github.com/mihar/fzf
 **Install OS X apps**
 
 ```bash
-brew cask install visual-studio-code
-brew cask install brave-browser
-brew cask install slack
-brew cask install telegram
-brew cask install spotify
-brew cask install numi
-brew cask install iterm2
-brew cask install docker
-brew cask install shifty
-brew cask install lunar
-brew cask install spectacle
-brew cask install istat-menus
-brew cask install bartender
-brew cask install cleanmymac
-brew cask install sonos
+brew cask install visual-studio-code # Primary code editor
+brew cask install fork # Visual Git client
+brew cask install brave-browser # Privacy centric fork of Chrome with built-in Tor
+brew cask install slack # New age IRC
+brew cask install telegram # Privacy focused IM
+brew cask install spotify # Tunes
+brew cask install numi # Quick maffs
+brew cask install iterm2 # Fully featured terminal emulator for OS X
+brew cask install docker # Containerization for dependencies and production simulation
+brew cask install shifty # Automate dark mode based on time of day
+brew cask install lunar # Control external displays
+brew cask install spectacle # Window resizing with keyboard
+brew cask install istat-menus # System monitoring tooling in OS X menu bar
+brew cask install bartender # Clean up your menu bar by hiding non-essential items
+brew cask install cleanmymac # Paid app for cache cleaning, app updating and other performance tweaks
+brew cask install sonos # Sound system if you have Sonos speakers
 ```
 
 ## SSH
@@ -110,6 +111,7 @@ For `sVimcss` load the gist `842ac422e7ead649f9a946cdd2e12bde`.
 cd ~
 ln -s ~/Code/dotenv/home/gemrc .gemrc
 ln -s ~/Code/dotenv/home/gitconfig .gitconfig
+mkdir -p ~/.config/nvim
 ln -s ~/Code/dotenv/home/init.vim ~/.config/nvim/init.vim
 ln -s ~/Code/dotenv/home/inputrc .inputrc
 ln -s ~/Code/dotenv/home/npmrc .npmrc
@@ -154,7 +156,7 @@ ln -s /usr/local/bin/nvim /usr/local/bin/vim
 Now install [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```bash
-mkdir -p ~/.config/nvim/autoload 
+mkdir -p ~/.config/nvim/autoload
 curl https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim > ~/.config/nvim/autoload/plug.vim
 vim +PlugInstall +qall
 ```
