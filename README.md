@@ -38,6 +38,7 @@ brew install wget
 brew install neovim
 brew install imagemagick
 brew install the_silver_searcher
+brew install fd
 brew install rbenv
 brew install rbenv-gemset
 brew install nodenv
