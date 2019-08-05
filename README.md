@@ -12,6 +12,14 @@ Remove the annoying delay with Dock auto-hiding:
 defaults write com.apple.Dock autohide-delay -float 0; killall Dock
 ```
 
+## Reduce animations
+
+To make things appear snappier, remove unnecessary animations:
+
+```bash
+defaults write com.apple.dock expose-animation-duration -float 0
+```
+
 ## Screenshot location
 
 I like to keep my Desktop clean, so let's change the default location where screenshots are saved:
