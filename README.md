@@ -82,6 +82,8 @@ brew cask install istat-menus # System monitoring tooling in OS X menu bar
 brew cask install bartender # Clean up your menu bar by hiding non-essential items
 brew cask install cleanmymac # Paid app for cache cleaning, app updating and other performance tweaks
 brew cask install sonos # Sound system if you have Sonos speakers
+brew cask install alfred # Replacement for the default spotlight Cmd+Space
+brew cask install witch # Replacement for the default Opt+Tab switcher
 ```
 
 ## SSH
