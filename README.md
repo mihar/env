@@ -54,6 +54,7 @@ brew install postgresql
 brew install ffmpeg
 brew install nmap
 brew install fzf
+brew install tree
 
 # Heroku has its own tap
 brew tap heroku/brew && brew install heroku
