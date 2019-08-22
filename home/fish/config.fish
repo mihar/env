@@ -13,6 +13,9 @@ set -gx CVSEDITOR vim
 set -gx SVN_EDITOR vim
 set -gx GIT_EDITOR vim
 
+# Set GPG TTY settings
+set -gx GPG_TTY (tty)
+
 # FZF setting to use fd instead of find
 set -gx FZF_DEFAULT_COMMAND 'fd --type f'
 set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND

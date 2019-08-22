@@ -57,6 +57,10 @@ brew install fzf
 brew install tree
 brew install nnn
 
+# GPG
+brew install gpg
+brew install pinentry-mac
+
 # Heroku has its own tap
 brew tap heroku/brew && brew install heroku
 ```
@@ -94,14 +98,64 @@ brew cask install cleanmymac # Paid app for cache cleaning, app updating and oth
 brew cask install sonos # Sound system if you have Sonos speakers
 brew cask install alfred # Replacement for the default spotlight Cmd+Space
 brew cask install witch # Replacement for the default Opt+Tab switcher
+brew cask install keybase # GPG social network
 ```
 
 ## SSH
 
-Create a new key:
+Create a new key if you need it:
 
 ```bash
 ssh-keygen -t rsa -C "your_email@example.com"
+```
+
+## GPG
+
+Let's setup GPG for commit signing and other shenanigans.
+
+### Keybase
+
+Keybase is a great way to start using GPG, they'll generate your keys and host them for you.
+
+If you don't yet have an account, go to [https://keybase.io](https://keybase.io) and create it.
+
+Then login on your computer and the `keybase id` command should output your data.
+
+```bash
+keybase login
+keybase id
+```
+
+Let's create a new key on Keybase specifically for use in GPG on our computer.
+
+```bash
+keybase pgp gen --multi
+```
+
+Now we'll list available keys and set the default key for Git
+
+```bash
+$ gpg --list-secret-keys --keyid-format LONG
+# /Users/mihar/.gnupg/pubring.kbx
+# -------------------------------
+# sec   rsa4096/6B997648324AF29E 2019-08-19 [SC] [expires: 2035-08-15]
+# uid                 [ unknown] Miha Rebernik <miha@rebernik.info>
+# ssb   rsa4096/BB08A4DB17E7EC97 2019-08-19 [E] [expires: 2035-08-15]
+
+$ git config --global user.signingkey 6B997648324AF29E
+$ git config --global commit.gpgsign true
+```
+
+If you need to add the key to Github or anywhere else, you can use this command:
+
+```bash
+keybase pgp export -q 6B997648324AF29E | pbcopy
+```
+
+If you're having problems, try restarting the GPG agent:
+
+```bash
+gpgconf --kill gpg-agent
 ```
 
 ## Safari extensions
@@ -128,6 +182,8 @@ ln -s ~/Code/dotenv/home/init.vim ~/.config/nvim/init.vim
 ln -s ~/Code/dotenv/home/inputrc .inputrc
 ln -s ~/Code/dotenv/home/npmrc .npmrc
 ln -s ~/Code/dotenv/home/sshconfig ~/.ssh/config
+ln -s ~/Code/dotenv/home/gpg.conf ~/.gnupg/gpg.conf
+ln -s ~/Code/dotenv/home/gpg-agent.conf ~/.gnupg/gpg-agent.conf
 ```
 
 ### Fish

@@ -18,7 +18,7 @@
   branch = auto
   diff = auto
   status = auto
-	ui = true
+  ui = true
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -44,3 +44,7 @@
 	autosquash = true
 [credential]
 	helper = osxkeychain
+[commit]
+	gpgsign = true
+[gpg]
+	program = /usr/local/bin/gpg
