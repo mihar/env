@@ -56,6 +56,7 @@ brew install nmap
 brew install fzf
 brew install tree
 brew install nnn
+brew install geckodriver
 
 # GPG
 brew install gpg
@@ -83,6 +84,7 @@ omf install https://github.com/mihar/fzf
 brew cask install visual-studio-code # Primary code editor
 brew cask install fork # Visual Git client
 brew cask install brave-browser # Privacy centric fork of Chrome with built-in Tor
+brew cask install firefox # Standards based browser good for full feature specs
 brew cask install slack # New age IRC
 brew cask install telegram # Privacy focused IM
 brew cask install spotify # Tunes
