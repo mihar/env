@@ -151,32 +151,18 @@ An essential step is also aliasing the `keybase` command to `keybase --standalon
 
 This is accomplished in the `aliases.fish` file, so you don't need to do it.
 
+As a final step, let's make Keybase use the `pinentry-mac` so our passwords can be securely stored in the OS X Keychain.
+
+```bash
+keybase config set pinentry.path /usr/local/bin/pinentry-mac
+```
+
 #### If you don't have a GPG key yet
 
 Let's create a new key on Keybase specifically for use in GPG on our computer.
 
 ```bash
 keybase pgp gen --multi
-```
-
-Now we'll list available keys and set the default key for Git
-
-```bash
-$ gpg --list-secret-keys --keyid-format LONG
-# /Users/mihar/.gnupg/pubring.kbx
-# -------------------------------
-# sec   rsa4096/6B997648324AF29E 2019-08-19 [SC] [expires: 2035-08-15]
-# uid                 [ unknown] Miha Rebernik <miha@rebernik.info>
-# ssb   rsa4096/BB08A4DB17E7EC97 2019-08-19 [E] [expires: 2035-08-15]
-
-$ git config --global user.signingkey 6B997648324AF29E
-$ git config --global commit.gpgsign true
-```
-
-If you need to add the key to Github or anywhere else, you can use this command:
-
-```bash
-keybase pgp export -q 6B997648324AF29E | pbcopy
 ```
 
 #### If you have a GPG key already
@@ -210,6 +196,28 @@ will be needed every time you try to use this key to sign or decrypt something (
 ```bash
 keybase pgp import -i pgp_key
 keybase pgp export -q 6B997648324AF29E --secret | gpg --allow-secret-key-import --import
+```
+
+### Setting GPG and Git
+
+Now we'll list available keys and set the default key for Git
+
+```bash
+$ gpg --list-secret-keys --keyid-format LONG
+# /Users/mihar/.gnupg/pubring.kbx
+# -------------------------------
+# sec   rsa4096/6B997648324AF29E 2019-08-19 [SC] [expires: 2035-08-15]
+# uid                 [ unknown] Miha Rebernik <miha@rebernik.info>
+# ssb   rsa4096/BB08A4DB17E7EC97 2019-08-19 [E] [expires: 2035-08-15]
+
+$ git config --global user.signingkey 6B997648324AF29E
+$ git config --global commit.gpgsign true
+```
+
+If you need to add the key to Github or anywhere else, you can use this command:
+
+```bash
+keybase pgp export -q 6B997648324AF29E | pbcopy
 ```
 
 Now link the config files in this repo:
