@@ -42,3 +42,6 @@ end
 function ..
     cd ..
 end
+
+# Make Keybase chill out with a CLI only installation
+alias keybase='keybase --standalone'

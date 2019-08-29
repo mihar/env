@@ -1,6 +1,7 @@
 [user]
 	name = Miha Rebernik
 	email = miha@rebernik.info
+	signingkey = 6B997648324AF29E
 [alias]
   cp = cherry-pick
 	co = checkout
