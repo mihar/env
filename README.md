@@ -4,6 +4,12 @@ This are the base config files and settings I use on my work and personal machin
 
 If you use Dropbox, it's also a nice way to keep all of your things in sync. *iTerm 2* works well with config file syncing over Dropbox. Just symlink the files as instructed below and you should be good to go.
 
+## Key features
+
+- VIM everywhere (NeoVim obviously, VS Code, Fish shell, Safari)
+- Good typography
+- TBC
+
 Here's how my editor looks like:
 
 <img width="1680" alt="Screen Shot 2019-08-29 at 4 04 44 PM" src="https://user-images.githubusercontent.com/5446/63982337-f82a8a80-ca76-11e9-94e1-77f4fd4b9e44.png">
