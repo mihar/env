@@ -4,6 +4,14 @@ This are the base config files and settings I use on my work and personal machin
 
 If you use Dropbox, it's also a nice way to keep all of your things in sync. *iTerm 2* works well with config file syncing over Dropbox. Just symlink the files as instructed below and you should be good to go.
 
+Here's how my editor looks like:
+
+<img width="1680" alt="Screen Shot 2019-08-29 at 4 04 44 PM" src="https://user-images.githubusercontent.com/5446/63982337-f82a8a80-ca76-11e9-94e1-77f4fd4b9e44.png">
+
+Here's how my terminal looks like:
+
+<img width="850" alt="Screen Shot 2019-08-29 at 4 03 43 PM" src="https://user-images.githubusercontent.com/5446/63982365-0a0c2d80-ca77-11e9-8cea-b7556da9b141.png">
+
 ## The Dock
 
 Remove the annoying delay with Dock auto-hiding:
