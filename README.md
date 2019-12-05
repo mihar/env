@@ -65,7 +65,9 @@ brew install fd
 brew install rbenv
 brew install rbenv-gemset
 brew install nodenv
+brew install yarn
 brew install postgresql
+brew install redis
 brew install ffmpeg
 brew install nmap
 brew install fzf
