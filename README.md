@@ -106,6 +106,7 @@ brew cask install spotify # Tunes
 brew cask install numi # Quick maffs
 brew cask install iterm2 # Fully featured terminal emulator for OS X
 brew cask install docker # Containerization for dependencies and production simulation
+brew cask install paw # Powerful API inspector and explorer
 brew cask install lunar # Control external displays
 brew cask install spectacle # Window resizing with keyboard
 brew cask install istat-menus # System monitoring tooling in OS X menu bar
