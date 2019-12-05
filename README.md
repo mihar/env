@@ -7,6 +7,7 @@ If you use Dropbox, it's also a nice way to keep all of your things in sync. *iT
 ## Key features
 
 - VIM everywhere (NeoVim obviously, VS Code, Fish shell, Safari)
+- GPG through Keybase
 - Good typography
 - TBC
 
@@ -105,16 +106,18 @@ brew cask install spotify # Tunes
 brew cask install numi # Quick maffs
 brew cask install iterm2 # Fully featured terminal emulator for OS X
 brew cask install docker # Containerization for dependencies and production simulation
-brew cask install shifty # Automate dark mode based on time of day
 brew cask install lunar # Control external displays
 brew cask install spectacle # Window resizing with keyboard
 brew cask install istat-menus # System monitoring tooling in OS X menu bar
 brew cask install bartender # Clean up your menu bar by hiding non-essential items
 brew cask install cleanmymac # Paid app for cache cleaning, app updating and other performance tweaks
-brew cask install sonos # Sound system if you have Sonos speakers
 brew cask install alfred # Replacement for the default spotlight Cmd+Space
 brew cask install witch # Replacement for the default Opt+Tab switcher
 brew cask install keybase # GPG social network
+
+# Sonos
+brew tap homebrew/cask-drivers
+brew cask install sonos # Sound system if you have Sonos speakers
 ```
 
 ## SSH
@@ -336,6 +339,12 @@ vim +PlugInstall +qall
 * fugitive
 * ruby
 * javascript
+
+## Install all software updates
+
+```bash
+softwareupdate -i -a
+```
 
 ## iTerm 2
 
