@@ -41,7 +41,7 @@ I like to keep my Desktop clean, so let's change the default location where scre
 
 ```bash
 mkdir ~/Library/Mobile Documents/com~apple~CloudDocs/Screenshots
-ln -s ~/Library/Mobile Documents/com~apple~CloudDocs/Screenshots ~/Screenshots
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Screenshots/ ~/Screenshots
 $ defaults write com.apple.screencapture location ~/Screenshots && killall SystemUIServer
 ```
 
