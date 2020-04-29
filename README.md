@@ -38,10 +38,11 @@ defaults write com.apple.dock expose-animation-duration -float 0
 
 ## Screenshot location
 
-I like to keep my Desktop clean, so let's change the default location where screenshots are saved:
+I like to keep my Desktop clean, so let's change the default location where screenshots are saved to iCloud Drive:
 
 ```bash
-mkdir ~/Screenshots
+mkdir ~/Library/Mobile Documents/com~apple~CloudDocs/Screenshots
+ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Screenshots/ ~/Screenshots
 $ defaults write com.apple.screencapture location ~/Screenshots && killall SystemUIServer
 ```
 
