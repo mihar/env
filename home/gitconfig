@@ -1,20 +1,21 @@
 [user]
-	name = Miha Rebernik
-	email = miha@rebernik.info
-	signingkey = 6B997648324AF29E
+  name = Miha Rebernik
+  email = miha@rebernik.info
+  signingkey = 6B997648324AF29E
 [alias]
   cp = cherry-pick
-	co = checkout
-	st = status
+  co = checkout
+  st = status
   ci = commit
   br = branch
   df = diff
   lg = log -p
 [apply]
-	whitespace = nowarn
+  whitespace = nowarn
 [core]
-	editor = /usr/local/bin/vim
-	excludesfile = ~/Code/dotenv/home/gitignore_global
+  editor = /usr/local/bin/vim
+  excludesfile = ~/Code/dotenv/home/gitignore_global
+  pager = /bin/sh -c 'delta --theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
 [color]
   branch = auto
   diff = auto
@@ -34,18 +35,20 @@
   changed = green
   untracked = cyan
 [branch]
-	autosetuprebase = always
+  autosetuprebase = always
 [github]
-	user = mihar
+  user = mihar
 [push]
-	default = simple
+  default = simple
 [mergetool]
-	keepBackup = true
+  keepBackup = true
 [rebase]
-	autosquash = true
+  autosquash = true
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
 [commit]
-	gpgsign = true
+  gpgsign = true
 [gpg]
-	program = /usr/local/bin/gpg
+  program = /usr/local/bin/gpg
+[interactive]
+  diffFilter = /bin/sh -c 'delta --theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'

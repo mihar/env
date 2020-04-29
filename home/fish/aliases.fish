@@ -38,6 +38,13 @@ function docker_cleanup_images
   docker rmi (docker images | grep "^<none>" | awk '{print $3}')
 end
 
+# A cat 🐈 is a bat 🦇
+alias cat='bat --theme=(defaults read -globalDomain AppleInterfaceStyle 1>/dev/null 2>&1 && echo TwoDark || echo OneHalfLight)'
+alias delta='delta --theme=(defaults read -globalDomain AppleInterfaceStyle 1>/dev/null 2>&1 && echo TwoDark || echo OneHalfLight)'
+
+# Weather forecast
+alias weather='curl "wttr.in/?m"'
+
 # Helper functions
 function ..
     cd ..

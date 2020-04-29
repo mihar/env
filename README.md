@@ -9,6 +9,7 @@ If you use Dropbox, it's also a nice way to keep all of your things in sync. *iT
 - VIM everywhere (NeoVim obviously, VS Code, Fish shell, Safari)
 - GPG through Keybase
 - Good typography
+- OS X light/dark theme respected in VS Code, iTerm, bat, delta
 - TBC
 
 Here's how my editor looks like:
@@ -56,6 +57,8 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 ```bash
 brew install fish
+brew install delta
+brew install bat
 brew install git
 brew install wget
 brew install neovim
@@ -354,6 +357,13 @@ softwareupdate -i -a
 iTerm has a nice convenient way of overriding which directory houses your settings.
 
 ![](http://i.imgur.com/pwGCOrj.png)
+
+Then we need to link the theme change script to it's AutoLaunch directory.
+
+```bash
+mkdir -p ~/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch
+ln -s ~/Code/dotenv/iterm2/theme_switch.py ~/Library/ApplicationSupport/iTerm2/Scripts/AutoLaunch/theme_switch.py
+```
 
 ## Font
 
