@@ -60,6 +60,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew install fish
 brew install delta
 brew install bat
+brew install autojump
 brew install git
 brew install wget
 brew install neovim

@@ -20,6 +20,9 @@ set -gx GPG_TTY (tty)
 set -gx FZF_DEFAULT_COMMAND 'fd --type f'
 set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 
+# Install autojump
+[ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
+
 # Vim-like key bindings
 fish_vi_key_bindings
 
