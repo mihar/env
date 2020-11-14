@@ -30,6 +30,9 @@ function gpun
   git push --set-upstream origin (git branch | grep \* | cut -d ' ' -f2)
 end
 
+alias lg='lazygit'
+alias ldk='lazydocker'
+
 # Docker
 function docker_cleanup_containers
   docker rm (docker ps -a -q)

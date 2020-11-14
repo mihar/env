@@ -1,5 +1,5 @@
 [user]
-  name = Miha Rebernik
+	name = Miha
   email = miha@rebernik.info
   signingkey = 6B997648324AF29E
 [alias]
@@ -52,3 +52,8 @@
   program = /usr/local/bin/gpg
 [interactive]
   diffFilter = /bin/sh -c 'delta --theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

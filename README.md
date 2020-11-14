@@ -79,6 +79,8 @@ brew install fzf
 brew install tree
 brew install nnn
 brew install geckodriver
+brew install jesseduffield/lazygit/lazygit
+brew install diff-so-fancy
 
 # GPG
 brew install gpg
