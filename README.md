@@ -2,7 +2,7 @@
 
 This are the base config files and settings I use on my work and personal machines.
 
-If you use Dropbox, it's also a nice way to keep all of your things in sync. *iTerm 2* works well with config file syncing over Dropbox. Just symlink the files as instructed below and you should be good to go.
+If you use Dropbox, it's also a nice way to keep all of your things in sync. _iTerm 2_ works well with config file syncing over Dropbox. Just symlink the files as instructed below and you should be good to go.
 
 ## Key features
 
@@ -105,29 +105,25 @@ omf install https://github.com/mihar/fzf
 **Install OS X apps**
 
 ```bash
-brew cask install visual-studio-code # Primary code editor
-brew cask install fork # Visual Git client
-brew cask install brave-browser # Privacy centric fork of Chrome with built-in Tor
-brew cask install firefox # Standards based browser good for full feature specs
-brew cask install slack # New age IRC
-brew cask install telegram # Privacy focused IM
-brew cask install spotify # Tunes
-brew cask install numi # Quick maffs
-brew cask install iterm2 # Fully featured terminal emulator for OS X
-brew cask install docker # Containerization for dependencies and production simulation
-brew cask install paw # Powerful API inspector and explorer
-brew cask install lunar # Control external displays
-brew cask install spectacle # Window resizing with keyboard
-brew cask install istat-menus # System monitoring tooling in OS X menu bar
-brew cask install bartender # Clean up your menu bar by hiding non-essential items
-brew cask install cleanmymac # Paid app for cache cleaning, app updating and other performance tweaks
-brew cask install alfred # Replacement for the default spotlight Cmd+Space
-brew cask install witch # Replacement for the default Opt+Tab switcher
-brew cask install keybase # GPG social network
+brew install --cask visual-studio-code # Primary code editor
+brew install --cask fork # Visual Git client
+brew install --cask brave-browser # Privacy centric fork of Chrome with built-in Tor
+brew install --cask firefox # Standards based browser good for full feature specs
+brew install --cask slack # New age IRC
+brew install --cask telegram # Privacy focused IM
+brew install --cask spotify # Tunes
+brew install --cask numi # Quick maffs
+brew install --cask iterm2 # Fully featured terminal emulator for OS X
+brew install --cask docker # Containerization for dependencies and production simulation
+brew install --cask paw # Powerful API inspector and explorer
+brew install --cask spectacle # Window resizing with keyboard
+brew install --cask istat-menus # System monitoring tooling in OS X menu bar
+brew install --cask alfred # Replacement for the default spotlight Cmd+Space
+brew install --cask keybase # GPG social network
 
 # Sonos
 brew tap homebrew/cask-drivers
-brew cask install sonos # Sound system if you have Sonos speakers
+brew install --cask sonos # Sound system if you have Sonos speakers
 ```
 
 ## SSH
@@ -343,12 +339,12 @@ vim +PlugInstall +qall
 
 **Some of the plugins that you get:**
 
-* spacegray color scheme
-* fzf
-* ack
-* fugitive
-* ruby
-* javascript
+- spacegray color scheme
+- fzf
+- ack
+- fugitive
+- ruby
+- javascript
 
 ## Install all software updates
 
@@ -381,5 +377,5 @@ For more information look at this [blog post](http://mir.aculo.us/2010/10/12/the
 
 The font files can be downloaded from GitHub here:
 
-* [Meslo](https://github.com/andreberg/Meslo-Font/downloads)
-* [Meslo Nerd patched](https://github.com/ryanoasis/nerd-fonts/releases)
+- [Meslo](https://github.com/andreberg/Meslo-Font/downloads)
+- [Meslo Nerd patched](https://github.com/ryanoasis/nerd-fonts/releases)

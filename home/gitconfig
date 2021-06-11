@@ -1,7 +1,7 @@
 [user]
 	name = Miha
   email = miha@rebernik.info
-  signingkey = 6B997648324AF29E
+	signingkey = 6B997648324AF29E
 [alias]
   cp = cherry-pick
   co = checkout
@@ -15,7 +15,7 @@
 [core]
   editor = /usr/local/bin/vim
   excludesfile = ~/Code/dotenv/home/gitignore_global
-  pager = /bin/sh -c 'delta --theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
+  pager = /bin/sh -c 'delta --syntax-theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
 [color]
   branch = auto
   diff = auto
@@ -47,11 +47,11 @@
 [credential]
   helper = osxkeychain
 [commit]
-  gpgsign = true
+	gpgsign = true
 [gpg]
   program = /usr/local/bin/gpg
 [interactive]
-  diffFilter = /bin/sh -c 'delta --theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
+  diffFilter = /bin/sh -c 'delta --syntax-theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f

@@ -31,3 +31,9 @@ set -g theme_color_scheme gruvbox
 
 # iTerm 2 integration
 test -e ~/Code/dotenv/home/fish/iterm2_shell_integration.fish; and source ~/Code/dotenv/home/fish/iterm2_shell_integration.fish
+
+# The next line updates PATH for the Google Cloud SDK.
+# set -gx CLOUDSDK_PYTHON '/usr/local/bin/python3'
+# set -gx CLOUDSDK_GSUTIL_PYTHON '/usr/local/bin/python3'
+
+if [ -f ~/Code/google-cloud-sdk/path.fish.inc ]; . ~/Code/google-cloud-sdk/path.fish.inc; end

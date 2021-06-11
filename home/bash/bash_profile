@@ -42,6 +42,12 @@ GIT_PS1_SHOWCOLORHINTS=true
 # iTerm shell integration script
 source ~/Dropbox/Code/dotenv/home/bash/iterm2_shell_integration.bash
 
+# Google Cloud integration
+if [ -f ~/Code/google-cloud-sdk/path.bash.inc ]
+then
+	source ~/Code/google-cloud-sdk/path.bash.inc
+fi
+
 # Aliases
 #
 # Redefines of commands.
