@@ -29,6 +29,10 @@ fish_vi_key_bindings
 # Set bobthefish theme
 set -g theme_color_scheme gruvbox
 
+# Update path for brew
+fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin
+
 # iTerm 2 integration
 test -e ~/Code/dotenv/home/fish/iterm2_shell_integration.fish; and source ~/Code/dotenv/home/fish/iterm2_shell_integration.fish
 

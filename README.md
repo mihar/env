@@ -41,7 +41,7 @@ defaults write com.apple.dock expose-animation-duration -float 0
 I like to keep my Desktop clean, so let's change the default location where screenshots are saved to iCloud Drive:
 
 ```bash
-mkdir ~/Library/Mobile Documents/com~apple~CloudDocs/Screenshots
+mkdir -p ~/Library/Mobile\ Documents/com~apple~CloudDocs/Screenshots
 ln -s ~/Library/Mobile\ Documents/com\~apple\~CloudDocs/Screenshots/ ~/Screenshots
 $ defaults write com.apple.screencapture location ~/Screenshots && killall SystemUIServer
 ```
@@ -51,14 +51,14 @@ $ defaults write com.apple.screencapture location ~/Screenshots && killall Syste
 **Install homebrew first**
 
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 **Install packages**
 
 ```bash
 brew install fish
-brew install delta
+brew install git-delta
 brew install bat
 brew install autojump
 brew install git
@@ -112,7 +112,6 @@ brew install --cask firefox # Standards based browser good for full feature spec
 brew install --cask slack # New age IRC
 brew install --cask telegram # Privacy focused IM
 brew install --cask spotify # Tunes
-brew install --cask numi # Quick maffs
 brew install --cask iterm2 # Fully featured terminal emulator for OS X
 brew install --cask docker # Containerization for dependencies and production simulation
 brew install --cask paw # Powerful API inspector and explorer
@@ -147,8 +146,8 @@ If you don't yet have an account, go to [https://keybase.io](https://keybase.io)
 Then login on your computer and the `keybase id` command should output your data.
 
 ```bash
-keybase login
-keybase id
+/Applications/Keybase.app/Contents/SharedSupport/bin/keybase login
+/Applications/Keybase.app/Contents/SharedSupport/bin/keybase id
 ```
 
 #### Making Keybase behave
@@ -177,7 +176,7 @@ This is accomplished in the `aliases.fish` file, so you don't need to do it.
 As a final step, let's make Keybase use the `pinentry-mac` so our passwords can be securely stored in the OS X Keychain.
 
 ```bash
-keybase config set pinentry.path /usr/local/bin/pinentry-mac
+keybase config set pinentry.path /opt/homebrew/bin/pinentry-mac
 ```
 
 #### If you don't have a GPG key yet
@@ -313,7 +312,7 @@ ln -s ~/Code/dotenv/home/bash/bashrc .bashrc
 
 ## VS Code
 
-I use [VS Code](https://code.visualstudio.com/) as my editor and use the [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) package to sync via Github gists.
+I use [VS Code](https://code.visualstudio.com/) as my editor.
 
 Since I use Vim mode in VS Code, one handy setting is also turning off letter accent suggestings on pressing, which makes it possible to hold `h`, `j`, `k`, `l` and others and it'll repeat the motion.
 
@@ -326,7 +325,7 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 Lets link nvim to vim for less hassle:
 
 ```bash
-ln -s /usr/local/bin/nvim /usr/local/bin/vim
+ln -s /opt/homebrew/bin/nvim /opt/homebrew/bin/vim
 ```
 
 Now install [vim-plug](https://github.com/junegunn/vim-plug):
