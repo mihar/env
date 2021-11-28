@@ -93,7 +93,7 @@ brew tap heroku/brew && brew install heroku
 **Install the Fish shell**
 
 ```bash
-curl -L https://get.oh-my.fish | fish
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 sudo echo /usr/local/bin/fish >> /etc/shells
 chsh -s /usr/local/bin/fish
 omf install rbenv
