@@ -20,6 +20,16 @@ Here's how my terminal looks like:
 
 <img width="850" alt="Screen Shot 2019-08-29 at 4 03 43 PM" src="https://user-images.githubusercontent.com/5446/63982365-0a0c2d80-ca77-11e9-8cea-b7556da9b141.png">
 
+## Antialiasing
+
+In MacOS Monterey when using a large external non-HiDPI screen, the anti-aliasing is too strong and results in blurry text. To rectify, reduce the anti-aliasing to 1 with:
+
+```bash
+defaults -currentHost write -g AppleFontSmoothing -int 1
+```
+
+A reboot is required for the setting to take effect.
+
 ## The Dock
 
 Remove the annoying delay with Dock auto-hiding:
@@ -366,15 +376,10 @@ ln -s ~/Code/dotenv/iterm2/theme_switch.py ~/Library/ApplicationSupport/iTerm2/S
 
 ## Font
 
-For my editor usage I use **Meslo**, which is a customized version of Apple's Menlo typeface. Main differentiator is that it offers three different line-heights baked into the type, because back in the day, most terminal applications were oblivious to the importance of such a setting.
-
-For terminal support of the bob the fish theme, I use a [patched version of Meslo](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo) from the [Nerd Fonts project](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/Meslo).
-
-iTerm 2 has such a setting now, but I still prefer to use the **Meslo LG L DZ** at 12pts.
-
-For more information look at this [blog post](http://mir.aculo.us/2010/10/12/the-long-search-for-a-terminal-font-is-over/).
+For my editor and terminal I use **Fira Code**, a finely crafted monospaced font that has ligatures and other features like powerline, to power the terminal drawings. In the past I used Meslo, a modified version of Apple's Menlo.
 
 The font files can be downloaded from GitHub here:
 
+- [Fira Code](https://github.com/tonsky/FiraCode)
 - [Meslo](https://github.com/andreberg/Meslo-Font/downloads)
 - [Meslo Nerd patched](https://github.com/ryanoasis/nerd-fonts/releases)
