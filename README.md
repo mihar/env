@@ -125,7 +125,7 @@ brew install --cask spotify # Tunes
 brew install --cask iterm2 # Fully featured terminal emulator for OS X
 brew install --cask docker # Containerization for dependencies and production simulation
 brew install --cask paw # Powerful API inspector and explorer
-brew install --cask spectacle # Window resizing with keyboard
+brew install --cask rectangle # Window resizing with keyboard
 brew install --cask istat-menus # System monitoring tooling in OS X menu bar
 brew install --cask alfred # Replacement for the default spotlight Cmd+Space
 brew install --cask keybase # GPG social network
