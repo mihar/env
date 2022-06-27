@@ -43,7 +43,7 @@ end
 
 # A cat 🐈 is a bat 🦇
 alias cat='bat --theme=(defaults read -globalDomain AppleInterfaceStyle 1>/dev/null 2>&1 && echo TwoDark || echo OneHalfLight)'
-alias delta='delta --theme=(defaults read -globalDomain AppleInterfaceStyle 1>/dev/null 2>&1 && echo TwoDark || echo OneHalfLight)'
+alias delta='delta --syntax-theme=(defaults read -globalDomain AppleInterfaceStyle 1>/dev/null 2>&1 && echo TwoDark || echo OneHalfLight)'
 
 # Weather forecast
 alias weather='curl "wttr.in/?m"'

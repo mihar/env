@@ -15,7 +15,7 @@
 [core]
   editor = nvim
   excludesfile = ~/Code/dotenv/home/gitignore_global
-  pager = /bin/sh -c 'delta --theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
+  pager = /bin/sh -c 'delta --syntax-theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
 [color]
   branch = auto
   diff = auto
@@ -51,7 +51,7 @@
 [gpg]
   program = /opt/homebrew/bin/gpg
 [interactive]
-  diffFilter = /bin/sh -c 'delta --theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
+  diffFilter = /bin/sh -c 'delta --syntax-theme=$(defaults read -globalDomain AppleInterfaceStyle &>/dev/null && echo TwoDark || echo OneHalfLight)'
 [filter "lfs"]
   clean = git-lfs clean -- %f
   smudge = git-lfs smudge -- %f
