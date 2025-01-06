@@ -26,6 +26,7 @@ alias gstshl='git stash list'
 alias gstshp='git stash pop'
 alias gstshd='git stash drop'
 alias clean_branches="git branch --merged master | grep -v 'master\$' | xargs git branch -d"
+
 function gpun
   git push --set-upstream origin (git branch | grep \* | cut -d ' ' -f2)
 end

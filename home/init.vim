@@ -3,7 +3,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'mileszs/ack.vim'
-Plug 'ajh17/Spacegray.vim'
+Plug 'joshdick/onedark.vim'
 Plug 'mattn/emmet-vim'
 Plug 'vim-ruby/vim-ruby'
 Plug 'pangloss/vim-javascript'
@@ -14,7 +14,8 @@ Plug '/usr/local/opt/fzf'
 " Initialize plugin system
 call plug#end()
 
-colorscheme spacegray
+syntax on
+colorscheme onedark
 
 set background=dark
 set number	" Show line numbers

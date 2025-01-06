@@ -104,8 +104,8 @@ brew tap heroku/brew && brew install heroku
 
 ```bash
 curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
-sudo echo /usr/local/bin/fish >> /etc/shells
-chsh -s /usr/local/bin/fish
+sudo echo /opt/homebrew/bin/fish >> /etc/shells
+chsh -s /opt/homebrew/bin/fish
 omf install rbenv
 omf install nodenv
 omf install bobthefish
@@ -115,19 +115,20 @@ omf install https://github.com/mihar/fzf
 **Install OS X apps**
 
 ```bash
+brew install --cask cursor # AI editor
+brew install --cask raycast # Replacement for spotlight and much more
 brew install --cask visual-studio-code # Primary code editor
 brew install --cask fork # Visual Git client
-brew install --cask brave-browser # Privacy centric fork of Chrome with built-in Tor
+brew install --cask chatgpt # The OG AI
+brew install --cask arc # Better Chrome
 brew install --cask firefox # Standards based browser good for full feature specs
 brew install --cask slack # New age IRC
 brew install --cask telegram # Privacy focused IM
 brew install --cask spotify # Tunes
-brew install --cask iterm2 # Fully featured terminal emulator for OS X
+brew install --cask warp # New age terminal
 brew install --cask docker # Containerization for dependencies and production simulation
 brew install --cask paw # Powerful API inspector and explorer
-brew install --cask rectangle # Window resizing with keyboard
 brew install --cask istat-menus # System monitoring tooling in OS X menu bar
-brew install --cask alfred # Replacement for the default spotlight Cmd+Space
 brew install --cask keybase # GPG social network
 
 # Sonos
@@ -168,7 +169,7 @@ The following will trim all the fat and leave the good: CLI.
 
 ```bash
 /Applications/Keybase.app/Contents/SharedSupport/bin/keybase install -c cli
-keybase ctl stop
+$(which keybase) ctl stop # Can't run keybase raw here, because it's aliased to keybase --standalone in fish aliases, but this command won't work in standalone mode.
 keybase uninstall -c fuse
 keybase uninstall -c helper
 keybase uninstall -c kbfs
@@ -229,6 +230,30 @@ will be needed every time you try to use this key to sign or decrypt something (
 keybase pgp import -i pgp_key
 keybase pgp export -q 6B997648324AF29E --secret | gpg --allow-secret-key-import --import
 ```
+
+###### Importing existing GPG key without Keybase
+
+If you need to, first export the key from another machine with GPG:
+
+```bash
+gpg --export-secret-keys --armor <key-id-or-email> > private-key.asc
+```
+
+Then import it on your current machine with:
+
+```bash
+gpg --import private-key.asc
+```
+
+##### Marking the keys as trusted
+
+We want to mark our keys as _ultimately_ trusted, to avoid warnings when using them. Obviously do this only **for keys you created**.
+
+```bash
+gpg --edit-key <key-id-or-email>
+```
+
+Type `trust` and then select level `5` which should be `Ultimate`.
 
 ### Setting GPG and Git
 
@@ -348,7 +373,7 @@ vim +PlugInstall +qall
 
 **Some of the plugins that you get:**
 
-- spacegray color scheme
+- onedark color scheme
 - fzf
 - ack
 - fugitive
@@ -381,5 +406,5 @@ For my editor and terminal I use **Fira Code**, a finely crafted monospaced font
 The font files can be downloaded from GitHub here:
 
 - [Fira Code](https://github.com/tonsky/FiraCode)
-- [Meslo](https://github.com/andreberg/Meslo-Font/downloads)
+- [Meslo](https://github.com/andreberg/Meslo-Font/releases)
 - [Meslo Nerd patched](https://github.com/ryanoasis/nerd-fonts/releases)
