@@ -355,6 +355,12 @@ Since I use Vim mode in VS Code, one handy setting is also turning off letter ac
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 ```
 
+And use this for Cursor as it uses a different bundle identifier.
+
+```bash
+defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
+```
+
 ## NeoVim
 
 Lets link nvim to vim for less hassle:
